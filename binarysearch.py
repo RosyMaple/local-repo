@@ -5,17 +5,17 @@ def binary_search(listinput: list, target):
     listinput.sort()
     low = 0
     high = len(listinput) - 1
-    guess = False
+    found = False
     operation = math.ceil
 
-    while guess is not True:
+    while found is not True:
         mid = operation((low + high) / 2)
         element = listinput[mid]
         if high - low == 0 and element != target:
             print(f"{target} not found")
             break
         if element == target:
-            guess = True
+            found = True
             print(f"{element} found at index {mid}")
         elif element > target:
             high = mid - 1
