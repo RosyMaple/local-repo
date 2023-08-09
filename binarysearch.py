@@ -2,6 +2,8 @@ import math
 
 
 def binary_search(listinput: list, target):
+    '''Sort the list in ascending order (case sensitive)
+    and then search for the target element.'''
     listinput.sort()
     low = 0
     high = len(listinput) - 1
@@ -22,4 +24,4 @@ def binary_search(listinput: list, target):
         elif element < target:
             low = mid + 1
 
-#useless comment
+# useless comment
