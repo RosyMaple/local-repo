@@ -21,3 +21,5 @@ def binary_search(listinput: list, target):
             high = mid - 1
         elif element < target:
             low = mid + 1
+
+#useless comment
